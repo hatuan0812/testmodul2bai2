@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>User Management System</h1>
+
+    <!-- Login  -->
+    <form id="loginForm">
+        <h2>Đăng nhập</h2>
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail" required>
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required>
+        <button type="submit">Đăng nhập</button>
+        <p id="loginMessage"></p>
+    </form>
+
+    <!-- Register  -->
+    <form id="registerForm">
+        <h2>Đăng ký</h2>
+        <label for="registerFirstName">First Name:</label>
+        <input type="text" id="registerFirstName" name="registerFirstName" required>
+        <label for="registerLastName">Last Name:</label>
+        <input type="text" id="registerLastName" name="registerLastName" required>
+        <label for="registerEmail">Email:</label>
+        <input type="email" id="registerEmail" name="registerEmail" required>
+        <label for="registerPassword">Password:</label>
+        <input type="password" id="registerPassword" name="registerPassword" required>
+        <button type="submit">Đăng ký</button>
+        <p id="registerMessage"></p>
+    </form>
+
+    <!-- Search Users  -->
+    <form id="searchUsersForm">
+        <h2>Tìm kiếm người dùng</h2>
+        <label for="searchKeyword">Keyword:</label>
+        <input type="text" id="searchKeyword" name="searchKeyword">
+        <button type="submit">Tìm kiếm</button>
+        <div id="searchUsersResult"></div>
+    </form>
+
+    <!-- List Posts Button -->
+    <div id="btn-list">
+    <button id="listPostsButton">Danh sách bài đăng</button>
+    </div>
+    <div id="listPostsResult"></div>
+    
+    <!-- View Post  -->
+    <form id="viewPostForm">
+        <h2>Xem chi tiết bài đăng</h2>
+        <label for="viewPostId">ID Bài đăng:</label>
+        <input type="number" id="viewPostId" name="viewPostId" required>
+        <button type="submit">Xem chi tiết</button>
+        <div id="viewPostResult"></div>
+    </form>
+
+    <!-- Search Posts By User  -->
+    <form id="searchPostsByUserForm">
+        <h2>Tìm kiếm bài đăng theo người dùng</h2>
+        <label for="userEmail">Email người dùng:</label>
+        <input type="email" id="userEmail" name="userEmail" required>
+        <button type="submit">Tìm kiếm</button>
+        <div id="searchPostsByUserResult"></div>
+    </form>
+    <!-- <script src="users.js"></script>
+    <script src="posts.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
